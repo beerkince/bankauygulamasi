@@ -52,7 +52,7 @@ int client()
 		memset(buf, 0, 4096);
         int i=1;
         string gelen;  
-        string choiceStr;                                      // bu hiçbir yerde kullanılmamış ki
+        string choiceStr;                                      
         int bytesReceived = recv(sock, buf, 4096, 0);
         int choice;
                 
