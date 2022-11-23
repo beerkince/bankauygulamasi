@@ -9,7 +9,7 @@
 #include <fstream>
 #include <algorithm>
 #include "server_lib.hpp"
- 
+
 using namespace std;
 struct Bank{
     
@@ -74,7 +74,7 @@ static int passcheck(string pass,string name)
     //cout << arrayUser->password << endl;
     //cout << (arrayUser+1)->nameSurname <<endl;
     string password;
-    string nick;                             // bu stringleri headera ekleyemeyez miyiz....................
+    string nick;                             
     for(int i=0;i<4;i++){
         nick = (arrayUser+i)->userName;
         if((name) == (nick)){
@@ -289,7 +289,7 @@ int socket()
         }
         string enteredname ;
         string error = "error";
-        string correct = "correct";   //bunları değiştirirsek clientta da değiştirmek zorundayız
+        string correct = "correct";   
         cout << "giriş yapiliyor. " << string(buf, 0, bytesReceivedName) << endl;
         
         if(true)
